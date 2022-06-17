@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D39FD32E285C05C7006BA1E4 /* usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FD32D285C05C7006BA1E4 /* usuario.swift */; };
+		D39FD330285C0800006BA1E4 /* venta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FD32F285C0800006BA1E4 /* venta.swift */; };
 		D3A3FA852852A43100427676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3FA842852A43100427676 /* AppDelegate.swift */; };
 		D3A3FA872852A43100427676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3FA862852A43100427676 /* ViewController.swift */; };
 		D3A3FA892852A43300427676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A3FA882852A43300427676 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D39FD32D285C05C7006BA1E4 /* usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usuario.swift; sourceTree = "<group>"; };
+		D39FD32F285C0800006BA1E4 /* venta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = venta.swift; sourceTree = "<group>"; };
 		D3A3FA812852A43100427676 /* ExamenP3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenP3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A3FA842852A43100427676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3A3FA862852A43100427676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 				D3A3FA862852A43100427676 /* ViewController.swift */,
 				D3A3FA882852A43300427676 /* Assets.xcassets */,
 				D3A3FA8A2852A43300427676 /* Main.storyboard */,
+				D39FD32F285C0800006BA1E4 /* venta.swift */,
+				D39FD32D285C05C7006BA1E4 /* usuario.swift */,
 				D3A3FA8D2852A43300427676 /* ExamenP3.entitlements */,
 			);
 			path = ExamenP3;
@@ -131,7 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39FD330285C0800006BA1E4 /* venta.swift in Sources */,
 				D3A3FA872852A43100427676 /* ViewController.swift in Sources */,
+				D39FD32E285C05C7006BA1E4 /* usuario.swift in Sources */,
 				D3A3FA852852A43100427676 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
