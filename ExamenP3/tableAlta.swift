@@ -31,7 +31,7 @@ class tableAlta: NSViewController {
         } else{
             alert.messageText = "No se encontro el ID, intente nuevamente."
             alert.alertStyle = .critical
-            alert.runModal()
+            alert.runModal()
         }
         
     }

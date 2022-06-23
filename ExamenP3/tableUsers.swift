@@ -24,9 +24,7 @@ class tableUsers: NSViewController {
     @IBAction func eliminar(_ sender: Any) {
         if Usuarios.contains(where: {$0.id == ID.stringValue}){
             let indexs = Usuarios.map({$0.id})
-            
             index = indexs.firstIndex(of: ID.stringValue)
-            
             vc.Usuarios.remove(at: index)
             Usuarios.remove(at: index)
         } else{

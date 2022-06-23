@@ -10,16 +10,33 @@ import Cocoa
 class altaProducto: NSViewController {
 
     let alert = NSAlert()
+    
     @IBOutlet var vc: ViewController!
     
     @IBOutlet weak var Detalle: NSTextField!
     @IBOutlet weak var Unidad: NSComboBox!
     @IBOutlet weak var Costo: NSTextField!
     @IBOutlet weak var Precio: NSTextField!
+    @IBOutlet weak var modifyBtn: NSButton!
+    @IBOutlet weak var addBtn: NSButton!
+    var index:Int!
+    var bandera:Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
         Unidad.isEditable = false
+    
+        
+        modifyBtn.isHidden = !bandera
+        addBtn.isHidden = bandera
+        
+        if bandera{
+            Detalle.stringValue = vc.Productos[index].detalle
+            Unidad.stringValue = vc.Productos[index].unidad
+            Costo.doubleValue = vc.Productos[index].costo
+            Precio.doubleValue = vc.Productos[index].precio
+
+        }
     }
     
     @IBAction func agregar(_ sender: Any) {
@@ -95,6 +112,13 @@ class altaProducto: NSViewController {
         }
         
     }
+    
+    /*@IBAction func modificar(_ sender: Any) {
+        vc.Productos[index] = (ProductModel(idF(Unidad: Unidad.stringValue, Detalle: Detalle.stringValue), Detalle.stringValue, Unidad.stringValue, Costo.doubleValue, Precio.doubleValue))
+        dismiss(self)
+        
+    }*/
+    
     
     func idF(Unidad: String, Detalle:String) -> String {
         var U = Unidad[Unidad.startIndex]
