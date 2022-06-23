@@ -778,10 +778,10 @@
             </objects>
             <point key="canvasLocation" x="-37" y="687"/>
         </scene>
-        <!--View Controller-->
+        <!--User Admin Menu-->
         <scene sceneID="Kpa-UL-T56">
             <objects>
-                <viewController id="VnY-oD-gkT" sceneMemberID="viewController">
+                <viewController id="VnY-oD-gkT" customClass="userAdminMenu" customModule="ExamenP3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="r2H-Nr-oDH">
                         <rect key="frame" x="0.0" y="0.0" width="327" height="405"/>
                         <autoresizingMask key="autoresizingMask"/>
