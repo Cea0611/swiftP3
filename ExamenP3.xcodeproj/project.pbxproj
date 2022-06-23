@@ -14,6 +14,13 @@
 		D37FD8EA28642D7300EFA9C7 /* ventasMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FD8E928642D7300EFA9C7 /* ventasMenu.swift */; };
 		D37FD8EC286437A900EFA9C7 /* altaVenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FD8EB286437A900EFA9C7 /* altaVenta.swift */; };
 		D37FD8EE28643AE000EFA9C7 /* tableVenta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FD8ED28643AE000EFA9C7 /* tableVenta.swift */; };
+		D37FD8F0286471F000EFA9C7 /* altaExistencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FD8EF286471F000EFA9C7 /* altaExistencia.swift */; };
+		D37FD8F22864728000EFA9C7 /* ExistenciaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FD8F12864728000EFA9C7 /* ExistenciaModel.swift */; };
+		D37FD8F42864804A00EFA9C7 /* AltaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FD8F32864804A00EFA9C7 /* AltaModel.swift */; };
+		D37FD8F62864820E00EFA9C7 /* almacenMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FD8F52864820E00EFA9C7 /* almacenMenu.swift */; };
+		D37FD8F82864851500EFA9C7 /* tableAlta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FD8F72864851500EFA9C7 /* tableAlta.swift */; };
+		D37FD8FA28648CFD00EFA9C7 /* altaProducto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FD8F928648CFD00EFA9C7 /* altaProducto.swift */; };
+		D37FD8FC286492A800EFA9C7 /* tableProducto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37FD8FB286492A800EFA9C7 /* tableProducto.swift */; };
 		D39F86602863F796002DEEA2 /* altaUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F865F2863F796002DEEA2 /* altaUsuario.swift */; };
 		D39F86622863FBE6002DEEA2 /* adminMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F86612863FBE6002DEEA2 /* adminMenu.swift */; };
 		D39F86642863FCFB002DEEA2 /* userAdminMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F86632863FCFB002DEEA2 /* userAdminMenu.swift */; };
@@ -31,6 +38,13 @@
 		D37FD8E928642D7300EFA9C7 /* ventasMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ventasMenu.swift; sourceTree = "<group>"; };
 		D37FD8EB286437A900EFA9C7 /* altaVenta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = altaVenta.swift; sourceTree = "<group>"; };
 		D37FD8ED28643AE000EFA9C7 /* tableVenta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableVenta.swift; sourceTree = "<group>"; };
+		D37FD8EF286471F000EFA9C7 /* altaExistencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = altaExistencia.swift; sourceTree = "<group>"; };
+		D37FD8F12864728000EFA9C7 /* ExistenciaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistenciaModel.swift; sourceTree = "<group>"; };
+		D37FD8F32864804A00EFA9C7 /* AltaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltaModel.swift; sourceTree = "<group>"; };
+		D37FD8F52864820E00EFA9C7 /* almacenMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = almacenMenu.swift; sourceTree = "<group>"; };
+		D37FD8F72864851500EFA9C7 /* tableAlta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableAlta.swift; sourceTree = "<group>"; };
+		D37FD8F928648CFD00EFA9C7 /* altaProducto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = altaProducto.swift; sourceTree = "<group>"; };
+		D37FD8FB286492A800EFA9C7 /* tableProducto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableProducto.swift; sourceTree = "<group>"; };
 		D39F865F2863F796002DEEA2 /* altaUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = altaUsuario.swift; sourceTree = "<group>"; };
 		D39F86612863FBE6002DEEA2 /* adminMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminMenu.swift; sourceTree = "<group>"; };
 		D39F86632863FCFB002DEEA2 /* userAdminMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userAdminMenu.swift; sourceTree = "<group>"; };
@@ -72,14 +86,21 @@
 		D3A3FA832852A43100427676 /* ExamenP3 */ = {
 			isa = PBXGroup;
 			children = (
+				D37FD8F32864804A00EFA9C7 /* AltaModel.swift */,
 				D3A3FA842852A43100427676 /* AppDelegate.swift */,
 				D39F86632863FCFB002DEEA2 /* userAdminMenu.swift */,
 				D39F86612863FBE6002DEEA2 /* adminMenu.swift */,
 				D37FD8E928642D7300EFA9C7 /* ventasMenu.swift */,
 				D3A3FA862852A43100427676 /* ViewController.swift */,
+				D37FD8EF286471F000EFA9C7 /* altaExistencia.swift */,
+				D37FD8F928648CFD00EFA9C7 /* altaProducto.swift */,
 				D37E29F72863A86B004BF795 /* PersonModel.swift */,
 				D3A3FA882852A43300427676 /* Assets.xcassets */,
 				D3A3FA8A2852A43300427676 /* Main.storyboard */,
+				D37FD8F72864851500EFA9C7 /* tableAlta.swift */,
+				D37FD8F52864820E00EFA9C7 /* almacenMenu.swift */,
+				D37FD8FB286492A800EFA9C7 /* tableProducto.swift */,
+				D37FD8F12864728000EFA9C7 /* ExistenciaModel.swift */,
 				D37FD8EB286437A900EFA9C7 /* altaVenta.swift */,
 				D37FD8ED28643AE000EFA9C7 /* tableVenta.swift */,
 				D37FD8E7286429ED00EFA9C7 /* tableUsers.swift */,
@@ -163,15 +184,22 @@
 			files = (
 				D37FD8E8286429ED00EFA9C7 /* tableUsers.swift in Sources */,
 				D37FD8EA28642D7300EFA9C7 /* ventasMenu.swift in Sources */,
+				D37FD8F62864820E00EFA9C7 /* almacenMenu.swift in Sources */,
+				D37FD8FA28648CFD00EFA9C7 /* altaProducto.swift in Sources */,
 				D39F86642863FCFB002DEEA2 /* userAdminMenu.swift in Sources */,
 				D37E29FA2863AD62004BF795 /* ProductModel.swift in Sources */,
+				D37FD8FC286492A800EFA9C7 /* tableProducto.swift in Sources */,
 				D39F86622863FBE6002DEEA2 /* adminMenu.swift in Sources */,
 				D3A3FA872852A43100427676 /* ViewController.swift in Sources */,
+				D37FD8F22864728000EFA9C7 /* ExistenciaModel.swift in Sources */,
+				D37FD8F82864851500EFA9C7 /* tableAlta.swift in Sources */,
 				D37E29FC2863AE66004BF795 /* VentaModel.swift in Sources */,
 				D37FD8EC286437A900EFA9C7 /* altaVenta.swift in Sources */,
 				D37E29F82863A86B004BF795 /* PersonModel.swift in Sources */,
 				D39F86602863F796002DEEA2 /* altaUsuario.swift in Sources */,
 				D37FD8EE28643AE000EFA9C7 /* tableVenta.swift in Sources */,
+				D37FD8F0286471F000EFA9C7 /* altaExistencia.swift in Sources */,
+				D37FD8F42864804A00EFA9C7 /* AltaModel.swift in Sources */,
 				D3A3FA852852A43100427676 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

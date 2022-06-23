@@ -18,7 +18,7 @@ class ventasMenu: NSViewController {
     }
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-        if segue.identifier == "vendeodresConsultaSegue"{
+        if segue.identifier == "vendedoresNuevaSegue"{
             (segue.destinationController as! altaVenta).vc = vc
         } else if segue.identifier == "vendedoresConsultaSegue"{
             (segue.destinationController as! tableVenta).vc = vc

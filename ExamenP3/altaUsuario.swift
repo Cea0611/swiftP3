@@ -72,7 +72,7 @@ class altaUsuario: NSViewController {
         switch n{
         case 0:
             vc.Usuarios.append(PersonModel(idF(nombre: Nombre.stringValue, apellidoP: ApellidoP.stringValue, apellidoM: ApellidoM.stringValue, rol: Rol.stringValue), Nombre.stringValue, ApellidoP.stringValue, ApellidoM.stringValue, Correo.stringValue, Contraseña.stringValue, Rol.stringValue))
-            print(vc.Usuarios)
+            //print(vc.Usuarios)
             dismiss(self)
             break
         case 1:
@@ -146,7 +146,6 @@ class altaUsuario: NSViewController {
         print(idFinal)
         return idFinal
     }
-    
     
 }
 

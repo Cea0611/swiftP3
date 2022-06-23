@@ -25,9 +25,9 @@ class adminMenu: NSViewController {
         if segue.identifier == "adminUsuariosSegue"{
             (segue.destinationController as! userAdminMenu).vc = vc
         } else if segue.identifier == "adminVentasSegue"{
-            
             (segue.destinationController as! ventasMenu).vc = vc
+        } else if segue.identifier == "adminAlmacenSegue"{
+            (segue.destinationController as! almacenMenu).vc = vc
         }
-        
     }
 }
