@@ -14,12 +14,16 @@ class userAdminMenu: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        //	print(vc.Usuarios.count)
     }
     
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
-        if segue.identifier == "adminUsuariosSegue"{
+        if segue.identifier == "altasUsersSegue"{
             (segue.destinationController as! altaUsuario).vc = vc
+        } else if segue.identifier == "tableUsersSegue" {
+            (segue.destinationController as! tableUsers).vc = vc
+            
         }
     }
 }

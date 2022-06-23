@@ -16,7 +16,7 @@ class ViewController: NSViewController {
     var banderaLogin: Bool = false
     var pass: String = ""
     var Usuarios: [PersonModel] = [PersonModel("A001CEA", "Cesar", "Elizarraraz", "Acosta", "cesar@bodega.com", "cesarin", "Admin"), PersonModel("A002FMC", "Fernando", "Miramontes", "Castro", "fer@bodega.com", "fercho", "Almacenista"), PersonModel("A003ACV", "Alfonso", "Cano", "Vargas", "poncho@bodega.com", "poncho", "Vendedor")]
-    var Ventas: [VentaModel] = []
+    var Ventas: [VentaModel] = [VentaModel("21","21",12,"21")]
     var Productos: [ProductModel] = []
     var alert = NSAlert()
     
@@ -54,7 +54,8 @@ class ViewController: NSViewController {
     }
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         if segue.identifier == "loginAdminSegue" {
-            (segue.destinationController as! altaUsuario).vc = self
+            //(segue.destinationController as! tableVenta).Ventas = Ventas
+            (segue.destinationController as! adminMenu).vc = self
         /*} else if segue.identifier == "menuAlmacenistaSegue" {
             (segue.destinationController as! MenuAlmacenistas).login = self
         } else if segue.identifier == "menuVentasSegue" {

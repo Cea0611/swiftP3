@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -809,7 +809,7 @@
                                 </buttonCell>
                                 <color key="bezelColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
-                                    <segue destination="sxD-bi-ygD" kind="modal" id="hQp-mJ-v2y"/>
+                                    <segue destination="sxD-bi-ygD" kind="modal" identifier="altasUsersSegue" id="hQp-mJ-v2y"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-Yy-QxZ">
@@ -821,7 +821,7 @@
                                 </buttonCell>
                                 <color key="bezelColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
                                 <connections>
-                                    <segue destination="QE4-Qv-V27" kind="modal" id="Dtc-4O-YEX"/>
+                                    <segue destination="QE4-Qv-V27" kind="modal" identifier="tableUsersSegue" id="Dtc-4O-YEX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -831,10 +831,10 @@
             </objects>
             <point key="canvasLocation" x="1592.5" y="359.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Table Users-->
         <scene sceneID="QN7-bk-esG">
             <objects>
-                <viewController id="QE4-Qv-V27" sceneMemberID="viewController">
+                <viewController id="QE4-Qv-V27" customClass="tableUsers" customModule="ExamenP3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="bsz-eq-7CY">
                         <rect key="frame" x="0.0" y="0.0" width="962" height="351"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1254,7 +1254,7 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVb-IV-SAO">
-                                <rect key="frame" x="-2" y="39" width="655" height="191"/>
+                                <rect key="frame" x="18" y="48" width="655" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" id="Qim-sL-fbK">
                                     <font key="font" metaFont="system"/>
@@ -1271,18 +1271,33 @@
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="back:" target="s3B-3p-45N" id="QXZ-gi-nks"/>
+                                </connections>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSJ-LA-idJ">
+                                <rect key="frame" x="616" y="38" width="66" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Atras" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7Jm-uH-Qu8">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="bezelColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                            </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="show" identifier="adminBackSegue" id="rpu-wa-uDC"/>
+                    </connections>
                 </viewController>
                 <customObject id="EyH-tD-NDI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="754" y="452.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Ventas Menu-->
         <scene sceneID="vzA-fm-lmA">
             <objects>
-                <viewController id="qao-8o-Ltd" sceneMemberID="viewController">
+                <viewController id="qao-8o-Ltd" customClass="ventasMenu" customModule="ExamenP3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="QBb-sI-7Cb">
                         <rect key="frame" x="0.0" y="0.0" width="577" height="266"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1315,7 +1330,7 @@
                                 </buttonCell>
                                 <color key="bezelColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="mSh-VP-UZs" kind="modal" identifier="vendeodresConsultaSegue" id="UnR-2f-kWK"/>
+                                    <segue destination="mSh-VP-UZs" kind="modal" identifier="vendedoresConsultaSegue" id="UnR-2f-kWK"/>
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMD-dM-T5E">
@@ -1490,6 +1505,9 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <color key="bezelColor" name="systemCyanColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <action selector="registrar:" target="sxD-bi-ygD" id="VqV-Hc-cD5"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oml-MS-DU2">
                                 <rect key="frame" x="108" y="23" width="92" height="32"/>
@@ -1531,7 +1549,7 @@
                 </viewController>
                 <customObject id="0F2-dk-9Z0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1973" y="918"/>
+            <point key="canvasLocation" x="1979" y="914"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Use-lm-f6Y">
@@ -1672,10 +1690,10 @@
             </objects>
             <point key="canvasLocation" x="-525" y="1793"/>
         </scene>
-        <!--View Controller-->
+        <!--Alta Venta-->
         <scene sceneID="LIA-ta-xW8">
             <objects>
-                <viewController id="loW-8O-1il" sceneMemberID="viewController">
+                <viewController id="loW-8O-1il" customClass="altaVenta" customModule="ExamenP3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="qm6-2l-UCJ">
                         <rect key="frame" x="0.0" y="0.0" width="436" height="197"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1782,10 +1800,10 @@
             </objects>
             <point key="canvasLocation" x="-445" y="979.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Table Venta-->
         <scene sceneID="sEJ-Ue-TwX">
             <objects>
-                <viewController id="mSh-VP-UZs" sceneMemberID="viewController">
+                <viewController id="mSh-VP-UZs" customClass="tableVenta" customModule="ExamenP3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="7LK-g0-lcm">
                         <rect key="frame" x="0.0" y="0.0" width="368" height="204"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1797,7 +1815,7 @@
                                     <rect key="frame" x="1" y="1" width="326" height="133"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" headerView="Gqo-XP-bi3" viewBased="YES" id="s7W-za-w4D">
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" headerView="owc-bb-rtf" viewBased="YES" id="s7W-za-w4D">
                                             <rect key="frame" x="0.0" y="0.0" width="326" height="105"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="17" height="0.0"/>
@@ -1828,6 +1846,9 @@
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="Gmt-ZS-Cr3" name="value" keyPath="objectValue.id" id="Hst-3y-Nsz"/>
+                                                                    </connections>
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
@@ -1860,6 +1881,9 @@
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="uZd-sv-5Uj" name="value" keyPath="objectValue.idProducto" id="Kgl-KA-usg"/>
+                                                                    </connections>
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
@@ -1892,6 +1916,9 @@
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="Zr3-k3-RlY" name="value" keyPath="objectValue.cantidad" id="t0R-uz-RpK"/>
+                                                                    </connections>
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
@@ -1924,6 +1951,9 @@
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
+                                                                    <connections>
+                                                                        <binding destination="dCu-vs-8Fu" name="value" keyPath="objectValue.idCliente" id="uq6-6U-oqA"/>
+                                                                    </connections>
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
@@ -1933,6 +1963,9 @@
                                                     </prototypeCellViews>
                                                 </tableColumn>
                                             </tableColumns>
+                                            <connections>
+                                                <binding destination="dca-on-6C9" name="content" keyPath="arrangedObjects" id="ela-nh-kox"/>
+                                            </connections>
                                         </tableView>
                                     </subviews>
                                 </clipView>
@@ -1940,11 +1973,11 @@
                                     <rect key="frame" x="1" y="119" width="326" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Hfs-Z1-RVC">
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Hfs-Z1-RVC">
                                     <rect key="frame" x="224" y="17" width="15" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <tableHeaderView key="headerView" wantsLayer="YES" id="Gqo-XP-bi3">
+                                <tableHeaderView key="headerView" wantsLayer="YES" id="owc-bb-rtf">
                                     <rect key="frame" x="0.0" y="0.0" width="326" height="28"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
@@ -1973,6 +2006,12 @@
                     </view>
                 </viewController>
                 <customObject id="5Q6-sG-iPf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <arrayController id="dca-on-6C9">
+                    <connections>
+                        <binding destination="mSh-VP-UZs" name="contentArray" keyPath="venta" id="YS7-h9-puy"/>
+                    </connections>
+                </arrayController>
+                <userDefaultsController representsSharedInstance="YES" id="F3E-Bd-nud"/>
             </objects>
             <point key="canvasLocation" x="-946" y="906"/>
         </scene>
@@ -2400,11 +2439,12 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="ryq-5g-gPX"/>
-        <segue reference="yjG-Pv-dhg"/>
+        <segue reference="dsn-Vy-Qlv"/>
         <segue reference="3ez-mY-7X8"/>
         <segue reference="hQp-mJ-v2y"/>
         <segue reference="W5p-cO-IZP"/>
         <segue reference="xYq-Cx-i2e"/>
+        <segue reference="rpu-wa-uDC"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="B1_Admin" width="800" height="418"/>
