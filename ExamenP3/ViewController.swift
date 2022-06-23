@@ -54,13 +54,14 @@ class ViewController: NSViewController {
     }
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         if segue.identifier == "loginAdminSegue" {
-            (segue.destinationController as! MenuAdmin).login = self
-        } else if segue.identifier == "menuAlmacenistaSegue" {
+            (segue.destinationController as! altaUsuario).vc = self
+        /*} else if segue.identifier == "menuAlmacenistaSegue" {
             (segue.destinationController as! MenuAlmacenistas).login = self
         } else if segue.identifier == "menuVentasSegue" {
             (segue.destinationController as! MenuVentas).login = self
-        }
+        }*/
     }
     
 }
 
+}

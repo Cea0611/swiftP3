@@ -10,7 +10,8 @@
 		D37E29F82863A86B004BF795 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37E29F72863A86B004BF795 /* PersonModel.swift */; };
 		D37E29FA2863AD62004BF795 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37E29F92863AD62004BF795 /* ProductModel.swift */; };
 		D37E29FC2863AE66004BF795 /* VentaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37E29FB2863AE66004BF795 /* VentaModel.swift */; };
-		D37E29FE2863AFDB004BF795 /* AltaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37E29FD2863AFDB004BF795 /* AltaModel.swift */; };
+		D39F86602863F796002DEEA2 /* altaUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F865F2863F796002DEEA2 /* altaUsuario.swift */; };
+		D39F86622863FBE6002DEEA2 /* adminMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39F86612863FBE6002DEEA2 /* adminMenu.swift */; };
 		D39FD32E285C05C7006BA1E4 /* usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FD32D285C05C7006BA1E4 /* usuario.swift */; };
 		D39FD330285C0800006BA1E4 /* venta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39FD32F285C0800006BA1E4 /* venta.swift */; };
 		D3A3FA852852A43100427676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A3FA842852A43100427676 /* AppDelegate.swift */; };
@@ -23,7 +24,8 @@
 		D37E29F72863A86B004BF795 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		D37E29F92863AD62004BF795 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		D37E29FB2863AE66004BF795 /* VentaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentaModel.swift; sourceTree = "<group>"; };
-		D37E29FD2863AFDB004BF795 /* AltaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltaModel.swift; sourceTree = "<group>"; };
+		D39F865F2863F796002DEEA2 /* altaUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = altaUsuario.swift; sourceTree = "<group>"; };
+		D39F86612863FBE6002DEEA2 /* adminMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminMenu.swift; sourceTree = "<group>"; };
 		D39FD32D285C05C7006BA1E4 /* usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usuario.swift; sourceTree = "<group>"; };
 		D39FD32F285C0800006BA1E4 /* venta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = venta.swift; sourceTree = "<group>"; };
 		D3A3FA812852A43100427676 /* ExamenP3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenP3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +50,7 @@
 		D3A3FA782852A43100427676 = {
 			isa = PBXGroup;
 			children = (
+				D39F86612863FBE6002DEEA2 /* adminMenu.swift */,
 				D3A3FA832852A43100427676 /* ExamenP3 */,
 				D3A3FA822852A43100427676 /* Products */,
 			);
@@ -69,7 +72,7 @@
 				D37E29F72863A86B004BF795 /* PersonModel.swift */,
 				D3A3FA882852A43300427676 /* Assets.xcassets */,
 				D3A3FA8A2852A43300427676 /* Main.storyboard */,
-				D37E29FD2863AFDB004BF795 /* AltaModel.swift */,
+				D39F865F2863F796002DEEA2 /* altaUsuario.swift */,
 				D37E29F92863AD62004BF795 /* ProductModel.swift */,
 				D37E29FB2863AE66004BF795 /* VentaModel.swift */,
 				D39FD32F285C0800006BA1E4 /* venta.swift */,
@@ -151,10 +154,11 @@
 			files = (
 				D39FD330285C0800006BA1E4 /* venta.swift in Sources */,
 				D37E29FA2863AD62004BF795 /* ProductModel.swift in Sources */,
+				D39F86622863FBE6002DEEA2 /* adminMenu.swift in Sources */,
 				D3A3FA872852A43100427676 /* ViewController.swift in Sources */,
 				D37E29FC2863AE66004BF795 /* VentaModel.swift in Sources */,
 				D37E29F82863A86B004BF795 /* PersonModel.swift in Sources */,
-				D37E29FE2863AFDB004BF795 /* AltaModel.swift in Sources */,
+				D39F86602863F796002DEEA2 /* altaUsuario.swift in Sources */,
 				D39FD32E285C05C7006BA1E4 /* usuario.swift in Sources */,
 				D3A3FA852852A43100427676 /* AppDelegate.swift in Sources */,
 			);

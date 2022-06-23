@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -728,7 +728,7 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hya-Fb-Ght">
-                                <rect key="frame" x="98" y="208" width="113" height="21"/>
+                                <rect key="frame" x="98" y="208" width="160" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" bezelStyle="round" id="eAM-BW-sf8">
                                     <font key="font" metaFont="system"/>
@@ -737,7 +737,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" fixedFrame="YES" contentType="password" translatesAutoresizingMaskIntoConstraints="NO" id="2pk-x6-AWG">
-                                <rect key="frame" x="98" y="154" width="113" height="21"/>
+                                <rect key="frame" x="98" y="154" width="160" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" bezelStyle="round" id="Xjf-Uc-YQ2">
                                     <font key="font" metaFont="system"/>
@@ -1195,10 +1195,10 @@
             </objects>
             <point key="canvasLocation" x="201.5" y="1127.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Admin Menu-->
         <scene sceneID="C29-lP-Ntc">
             <objects>
-                <viewController id="s3B-3p-45N" sceneMemberID="viewController">
+                <viewController id="s3B-3p-45N" customClass="adminMenu" customModule="ExamenP3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ceK-aK-ZlN">
                         <rect key="frame" x="0.0" y="0.0" width="700" height="417"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1350,10 +1350,10 @@
             </objects>
             <point key="canvasLocation" x="-797.5" y="359"/>
         </scene>
-        <!--View Controller-->
+        <!--Alta Usuario-->
         <scene sceneID="esb-4h-HeP">
             <objects>
-                <viewController id="sxD-bi-ygD" sceneMemberID="viewController">
+                <viewController id="sxD-bi-ygD" customClass="altaUsuario" customModule="ExamenP3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="s9e-SW-kua">
                         <rect key="frame" x="0.0" y="0.0" width="558" height="250"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1520,6 +1520,14 @@
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="ApellidoM" destination="NwA-h4-bQ4" id="RH0-Yh-thi"/>
+                        <outlet property="ApellidoP" destination="XIg-ka-BBj" id="GT3-TZ-LSV"/>
+                        <outlet property="Contraseña" destination="61m-Sw-TOa" id="j0g-df-u1y"/>
+                        <outlet property="Correo" destination="Nvs-sM-26Q" id="MNC-n4-yTA"/>
+                        <outlet property="Nombre" destination="ziM-sh-Zvz" id="S0e-aN-Fey"/>
+                        <outlet property="Rol" destination="I1k-tO-2BR" id="UMJ-oz-ovE"/>
+                    </connections>
                 </viewController>
                 <customObject id="0F2-dk-9Z0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2395,8 +2403,8 @@
         <segue reference="yjG-Pv-dhg"/>
         <segue reference="3ez-mY-7X8"/>
         <segue reference="hQp-mJ-v2y"/>
-        <segue reference="hz1-6f-gAJ"/>
-        <segue reference="K7P-uq-TWD"/>
+        <segue reference="W5p-cO-IZP"/>
+        <segue reference="xYq-Cx-i2e"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="B1_Admin" width="800" height="418"/>
